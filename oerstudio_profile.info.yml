@@ -1,0 +1,63 @@
+name: OER Studio by Learnful
+type: profile
+description: 'Open Education Resource Authoring Platform by Learnful.io'
+core_version_requirement: '^8.8 || ^9'
+
+distribution:
+  name: OER Studio by Learnful
+
+install:
+  - history
+  - big_pipe
+  - ban
+  - menu_link_content
+  - menu_ui
+  - page_cache
+  - dynamic_page_cache
+  - telephone
+  - datetime
+  - datetime_range
+  - block_content
+  - breakpoint
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - quickedit
+  - help
+  - image
+  - options
+  - path
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - editor
+  - ckeditor
+  - token
+  - gin_login
+  - gin_toolbar
+  - private_content
+  - admin_toolbar
+  - admin_toolbar_tools
+  - flood_control
+  - ctools
+  - menu_token
+
+dependencies:
+  - node
+  - block
+  - views
+
+themes:
+  - claro
+  - radix
+  - learnful_studio
+  - gin
