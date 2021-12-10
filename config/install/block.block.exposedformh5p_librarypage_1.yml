@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.h5p_library
+  module:
+    - system
+    - views
+  theme:
+    - learnful_studio
+id: exposedformh5p_librarypage_1
+theme: learnful_studio
+region: sidebar_left
+weight: -7
+provider: null
+plugin: 'views_exposed_filter_block:h5p_library-page_1'
+settings:
+  id: 'views_exposed_filter_block:h5p_library-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/library*"
+    negate: false
+    context_mapping: {  }

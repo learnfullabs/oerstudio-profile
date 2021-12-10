@@ -1,0 +1,11 @@
+id: term_5_nodes_per_term
+label: 'Term: 5 Nodes per Term'
+ui_limit: '*|list'
+properties:
+  block: 'views_block:subjects_page_content_per_term-block_1'
+  use_block_title: false
+  add_block_wrappers: false
+type: block
+type_label: 'Block field'
+entities:
+  taxonomy_term: taxonomy_term

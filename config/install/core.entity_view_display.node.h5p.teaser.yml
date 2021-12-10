@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.h5p.body
+    - field.field.node.h5p.field_h5p
+    - field.field.node.h5p.field_include_in_library
+    - field.field.node.h5p.field_include_in_profile
+    - field.field.node.h5p.field_subject
+    - field.field.node.h5p.field_tags
+    - node.type.h5p
+  module:
+    - private_content
+    - text
+    - user
+id: node.h5p.teaser
+targetEntityType: node
+bundle: h5p
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  flag_bookmark:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_collections_flag:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_flag_list_template_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_my_collection_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  private:
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: private
+hidden:
+  field_h5p: true
+  field_include_in_library: true
+  field_include_in_profile: true
+  field_subject: true
+  field_tags: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_include_in_profile
+    - node.type.collection
+id: node.collection.field_include_in_profile
+field_name: field_include_in_profile
+entity_type: node
+bundle: collection
+label: 'Include in Profile'
+description: 'When checked, this Collection will be included in your <a href="/user" target="_blank">Profile</a>, making it publicly discoverable when anyone views your profile.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

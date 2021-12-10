@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - private_content
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  private_content:
+    private: 1
+name: 'H5P Resource'
+type: h5p
+description: 'Create remixable <em>h5p</em> resources.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

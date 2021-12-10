@@ -1,0 +1,7 @@
+method: 1
+pattern: ''
+message: 'You must use your institution''s email address to register. See the full list of <a href="#">Approved Email Domains</a>.'
+actions: null
+form_build_id: form-aOJ5xUWTyHcJcTcvX4tCjWdTIaP4N6l6APh6j0WwaGA
+form_token: 0Mc8ZrlQRK67j_GWYCCvgQNjc130K69d72soff6NOfs
+form_id: domain_registration_admin_form

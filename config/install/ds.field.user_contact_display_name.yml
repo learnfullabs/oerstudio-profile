@@ -1,0 +1,11 @@
+id: user_contact_display_name
+label: 'User Contact: Display Name'
+ui_limit: ''
+properties:
+  content:
+    value: test
+    format: plain_text
+type: token
+type_label: 'Token field'
+entities:
+  contact_message: contact_message

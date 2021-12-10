@@ -1,0 +1,82 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.collection.field_description
+    - field.field.node.collection.field_include_in_library
+    - field.field.node.collection.field_include_in_profile
+    - field.field.node.collection.field_oer_reference
+    - field.field.node.collection.field_resources_in_collection
+    - field.field.node.collection.field_subject
+    - field.field.node.collection.field_tags
+    - field.field.node.collection.field_work_in_progress
+    - node.type.collection
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: radix_brenham_flipped
+      library: radix_layouts/radix_layouts
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      sidebar:
+        - 'dynamic_block_field:node-collection_resource_info'
+        - 'dynamic_block_field:node-h5p_author_info_inner'
+      contentmain:
+        - field_description
+        - 'dynamic_block_field:node-collection_resource_list'
+    fields:
+      'dynamic_block_field:node-collection_resource_info':
+        plugin_id: 'dynamic_block_field:node-collection_resource_info'
+        weight: 0
+        label: hidden
+        formatter: default
+      'dynamic_block_field:node-collection_resource_list':
+        plugin_id: 'dynamic_block_field:node-collection_resource_list'
+        weight: 3
+        label: above
+        formatter: default
+        ft:
+          id: default
+          settings:
+            lb: Collection
+            lb-col: false
+            classes: {  }
+      'dynamic_block_field:node-h5p_author_info_inner':
+        plugin_id: 'dynamic_block_field:node-h5p_author_info_inner'
+        weight: 1
+        label: above
+        formatter: default
+        ft:
+          id: default
+          settings:
+            lb: 'Shared by'
+            lb-col: false
+            classes: {  }
+id: node.collection.default
+targetEntityType: node
+bundle: collection
+mode: default
+content:
+  field_description:
+    type: basic_string
+    weight: 2
+    region: contentmain
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_include_in_library: true
+  field_include_in_profile: true
+  field_oer_reference: true
+  field_resources_in_collection: true
+  field_subject: true
+  field_tags: true
+  field_work_in_progress: true
+  links: true
+  private: true

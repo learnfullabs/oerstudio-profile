@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies: {  }
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access comments'
+  - 'access content'
+  - 'access editor'
+  - 'access own h5p results'
+  - 'access resource_browser entity browser pages'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'add flag lists'
+  - 'copy own h5ps'
+  - 'create collection content'
+  - 'create h5p content'
+  - 'create terms in tags'
+  - 'delete own collection content'
+  - 'delete own h5p content'
+  - 'download own h5ps'
+  - 'edit own collection content'
+  - 'edit own flag lists'
+  - 'edit own h5p content'
+  - 'embed own h5ps'
+  - 'flag bookmark'
+  - 'grant own content access'
+  - 'mark content as private'
+  - 'opt-in or out of google analytics tracking'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'unflag bookmark'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view own flag lists'
+  - 'view own unpublished content'
+  - 'view the administration theme'

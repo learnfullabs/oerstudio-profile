@@ -1,55 +1,101 @@
-name: OER Studio by Learnful
+name: oerstudio
 type: profile
 description: 'Open Education Resource Authoring Platform by Learnful.io'
 core_version_requirement: '^8.8 || ^9'
-
+version: '1.0-alpha'
 distribution:
-  name: OER Studio by Learnful
+  name: OER Studio
 
 install:
-  - history
-  - big_pipe
-  - ban
-  - menu_link_content
-  - menu_ui
-  - page_cache
-  - dynamic_page_cache
-  - telephone
-  - datetime
-  - datetime_range
-  - block_content
-  - breakpoint
-  - color
-  - config
-  - comment
-  - contextual
-  - contact
-  - quickedit
-  - help
-  - image
-  - options
-  - path
-  - taxonomy
-  - dblog
-  - search
-  - shortcut
-  - toolbar
-  - field_ui
-  - file
-  - rdf
-  - views
-  - views_ui
-  - editor
-  - ckeditor
-  - token
-  - gin_login
-  - gin_toolbar
-  - private_content
   - admin_toolbar
   - admin_toolbar_tools
-  - flood_control
+  - allow_iframed_site
+  - auto_entitylabel
+  - automated_cron
+  - better_exposed_filters
+  - big_pipe
+  - block_content
+  - bootstrap4_modal
+  - breakpoint
+  - chosen
+  - chosen_lib
+  - ckeditor
+  - color
+  - comment
+  - components
+  - config
+  - contact
+  - contextual
   - ctools
+  - datetime
+  - dblog
+  - domain_registration
+  - dynamic_page_cache
+  - editor
+  - email_registration
+  - embed
+  - entity_browser
+  - entity_browser_table
+  - entity_embed
+  - field
+  - field_group
+  - field_ui
+  - file
+  - filter
+  - flag
+  - gin_login
+  - google_analytics
+  - h5p
+  - h5peditor
+  - help
+  - history
+  - image
+  - jquery_ui
+  - jquery_ui_datepicker
+  - jquery_ui_slider
+  - jquery_ui_touch_punch
+  - layout_builder
+  - layout_discovery
+  - link
+  - link_attributes
+  - lstudio_h5p
+  - mailsystem
+  - media
+  - menu_link_content
   - menu_token
+  - menu_ui
+  - options
+  - page_cache
+  - path
+  - path_alias
+  - private_content
+  - quickedit
+  - radix_layouts
+  - rdf
+  - realname
+  - regcode_simple
+  - rest
+  - search
+  - serialization
+  - shortcut
+  - statistics
+  - system
+  - taxonomy
+  - taxonomy_manager
+  - text
+  - token
+  - toolbar
+  - tour
+  - update
+  - user
+  - views_autocomplete_filters
+  - views_conditional
+  - views_field_view
+  - views_filters_populate
+  - views_ui
+  - ds
+  - pathauto
+  - ds_extras
 
 dependencies:
   - node
@@ -57,6 +103,9 @@ dependencies:
   - views
 
 themes:
+  - seven
+  - stable
+  - classy
   - claro
   - radix
   - learnful_studio

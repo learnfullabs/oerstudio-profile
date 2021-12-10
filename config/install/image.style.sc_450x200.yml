@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: sc_450x200
+label: sc_450x200
+effects:
+  9c998d8d-b316-4b53-a027-6a31bdd7f515:
+    uuid: 9c998d8d-b316-4b53-a027-6a31bdd7f515
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 450
+      height: 200
+      anchor: center-center

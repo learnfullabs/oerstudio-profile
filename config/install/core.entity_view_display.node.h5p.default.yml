@@ -1,0 +1,106 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.h5p.body
+    - field.field.node.h5p.field_h5p
+    - field.field.node.h5p.field_include_in_library
+    - field.field.node.h5p.field_include_in_profile
+    - field.field.node.h5p.field_subject
+    - field.field.node.h5p.field_tags
+    - node.type.h5p
+  module:
+    - ds
+    - h5p
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  ds:
+    layout:
+      id: radix_brenham_flipped
+      library: radix_layouts/radix_layouts
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      sidebar:
+        - 'dynamic_block_field:node-h5p_resource_info'
+        - 'dynamic_block_field:node-h5p_author_info_inner'
+      contentmain:
+        - node_links
+        - field_h5p
+        - body
+    fields:
+      node_links:
+        plugin_id: node_links
+        weight: 2
+        label: hidden
+        formatter: default
+      'dynamic_block_field:node-h5p_author_info_inner':
+        plugin_id: 'dynamic_block_field:node-h5p_author_info_inner'
+        weight: 1
+        label: above
+        formatter: default
+        ft:
+          id: default
+          settings:
+            lb: 'Shared by'
+            lb-col: false
+            classes: {  }
+      'dynamic_block_field:node-h5p_resource_info':
+        plugin_id: 'dynamic_block_field:node-h5p_resource_info'
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.h5p.default
+targetEntityType: node
+bundle: h5p
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: Overview
+            lb-col: false
+            classes: {  }
+    region: contentmain
+  field_h5p:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: h5p_default
+    region: contentmain
+  flag_another_collection_13:
+    weight: 0
+    region: sidebar
+    settings: {  }
+    third_party_settings: {  }
+  flag_test_coll_1:
+    weight: 1
+    region: sidebar
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_include_in_library: true
+  field_include_in_profile: true
+  field_subject: true
+  field_tags: true
+  flag_bookmark: true
+  flag_collections_flag: true
+  flag_flag_list_template_1: true
+  flag_my_collection_1: true
+  links: true
+  private: true

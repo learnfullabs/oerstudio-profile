@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: member_display_name
+label: 'Member : Display_name'
+type: 'canonical_entities:user'
+pattern: 'member/[user:uid]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

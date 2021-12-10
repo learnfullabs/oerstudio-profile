@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_include_in_library
+    - node.type.collection
+id: node.collection.field_include_in_library
+field_name: field_include_in_library
+entity_type: node
+bundle: collection
+label: 'Include in Library'
+description: 'When checked, this Collection will be added to the <a href="/browse/collections" target="_blank">Collection Library</a>, making it publicly discoverable.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

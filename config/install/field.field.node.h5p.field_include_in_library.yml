@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_include_in_library
+    - node.type.h5p
+id: node.h5p.field_include_in_library
+field_name: field_include_in_library
+entity_type: node
+bundle: h5p
+label: 'Include in Library'
+description: 'When checked, this H5P Resource will be added to the Library. Please ensure that you have updated the resource''s License. Also note that "Private" content will not be listed in the Library.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

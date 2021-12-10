@@ -1,0 +1,12 @@
+name: 'OER Studio'
+mail: ydahi@learnful.io
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /library
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+mail_notification: ''

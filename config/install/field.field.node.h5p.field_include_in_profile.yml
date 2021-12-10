@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_include_in_profile
+    - node.type.h5p
+id: node.h5p.field_include_in_profile
+field_name: field_include_in_profile
+entity_type: node
+bundle: h5p
+label: 'Include in Profile'
+description: 'Activate this setting to include this H5P Resource in your profile.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

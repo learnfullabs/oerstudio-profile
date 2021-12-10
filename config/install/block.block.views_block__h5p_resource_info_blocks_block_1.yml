@@ -1,0 +1,32 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.h5p_resource_info_blocks
+  module:
+    - ctools
+    - views
+  theme:
+    - learnful_studio
+id: views_block__h5p_resource_info_blocks_block_1
+theme: learnful_studio
+region: sidebar_left
+weight: -6
+provider: null
+plugin: 'views_block:h5p_resource_info_blocks-block_1'
+settings:
+  id: 'views_block:h5p_resource_info_blocks-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      h5p: h5p
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

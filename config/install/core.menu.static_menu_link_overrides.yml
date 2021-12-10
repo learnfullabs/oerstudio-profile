@@ -1,0 +1,79 @@
+definitions:
+  contact__site_page:
+    enabled: true
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+  system__admin_content:
+    weight: -61
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_structure:
+    weight: -60
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__themes_page:
+    weight: -59
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__modules_list:
+    weight: -58
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_config:
+    weight: -57
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  entity__user__collection:
+    weight: -56
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_reports:
+    weight: -55
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  help__main:
+    weight: -54
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  standard__front_page:
+    weight: -47
+    enabled: false
+    menu_name: main
+    parent: ''
+    expanded: false
+  flag_lists__flagging_collection:
+    enabled: false
+    menu_name: main
+    parent: ''
+    expanded: false
+    weight: -46
+  user__page:
+    weight: -48
+    menu_name: account
+    parent: ''
+    expanded: false
+    enabled: false
+  user__logout:
+    weight: -49
+    menu_name: account
+    parent: ''
+    enabled: true
+    expanded: false

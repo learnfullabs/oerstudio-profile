@@ -1,0 +1,11 @@
+id: collection_resource_info
+label: 'Collection: Resource Info'
+ui_limit: 'collection|*'
+properties:
+  block: 'views_block:collection_resource_info-block_1'
+  use_block_title: false
+  add_block_wrappers: false
+type: block
+type_label: 'Block field'
+entities:
+  node: node

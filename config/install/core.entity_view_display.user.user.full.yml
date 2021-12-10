@@ -1,0 +1,61 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.full
+    - field.field.user.user.field_display_name
+    - field.field.user.user.field_organization_institution
+    - field.field.user.user.user_picture
+  module:
+    - ds
+    - layout_builder
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content:
+            w-75: w-75
+            mx-auto: mx-auto
+    regions:
+      ds_content:
+        - 'dynamic_block_field:user-user_profile_header'
+        - 'dynamic_block_field:user-user_h5p_in_profile'
+    fields:
+      'dynamic_block_field:user-user_h5p_in_profile':
+        plugin_id: 'dynamic_block_field:user-user_h5p_in_profile'
+        weight: 1
+        label: hidden
+        formatter: default
+      'dynamic_block_field:user-user_profile_header':
+        plugin_id: 'dynamic_block_field:user-user_profile_header'
+        weight: 0
+        label: hidden
+        formatter: default
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: user.user.full
+targetEntityType: user
+bundle: user
+mode: full
+content: {  }
+hidden:
+  field_display_name: true
+  field_organization_institution: true
+  member_for: true
+  realname: true
+  user_picture: true

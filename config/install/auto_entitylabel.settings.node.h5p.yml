@@ -1,0 +1,9 @@
+status: 1
+pattern: 'H5P Resource ID #[node:field_h5p:h5p_content_id]'
+escape: true
+preserve_titles: false
+save: 0
+chunk: '50'
+dependencies:
+  config:
+    - node.type.h5p

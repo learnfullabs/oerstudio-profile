@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_in_progress
+    - node.type.collection
+id: node.collection.field_work_in_progress
+field_name: field_work_in_progress
+entity_type: node
+bundle: collection
+label: Hidden
+description: "Checked by default. When this option is active, it will prevent the Collection from displaying in the Library or in your Profile - only those that have the URL to the Collection will be able to see it.<br>\r\nUncheck this option when you want your resource to be discoverable.<br>\r\n<em>Hint:<em> when activated, this option will override the \"Include in Profile\" and \"Include in Library\" settings and prevent this resource from being shown in either location."
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

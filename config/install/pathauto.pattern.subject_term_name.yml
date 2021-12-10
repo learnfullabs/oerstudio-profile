@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: subject_term_name
+label: 'Subject/Term Name'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'subject/[term:name]'
+selection_criteria:
+  4c25adfb-4f2c-4f4d-b7ce-f7132d8c132c:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      subjects: subjects
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 4c25adfb-4f2c-4f4d-b7ce-f7132d8c132c
+selection_logic: and
+weight: -5
+relationships: {  }

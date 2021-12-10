@@ -1,0 +1,107 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.h5p.body
+    - field.field.node.h5p.field_h5p
+    - field.field.node.h5p.field_include_in_library
+    - field.field.node.h5p.field_include_in_profile
+    - field.field.node.h5p.field_subject
+    - field.field.node.h5p.field_tags
+    - node.type.h5p
+  module:
+    - ds
+    - h5p
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  ds:
+    layout:
+      id: radix_brenham_flipped
+      library: radix_layouts/radix_layouts
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      contentmain:
+        - node_changed_date
+        - links
+        - field_subject
+        - field_tags
+        - body
+        - flag_my_collection_1
+        - flag_collections_flag
+      header:
+        - field_h5p
+    fields:
+      node_changed_date:
+        plugin_id: node_changed_date
+        weight: 0
+        label: above
+        formatter: ds_post_date_long
+id: node.h5p.full
+targetEntityType: node
+bundle: h5p
+mode: full
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: contentmain
+  field_h5p:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: h5p_default
+    region: header
+  field_subject:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: contentmain
+  field_tags:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: contentmain
+  flag_bookmark:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_collections_flag:
+    weight: 6
+    region: contentmain
+    settings: {  }
+    third_party_settings: {  }
+  flag_my_collection_1:
+    weight: 5
+    region: contentmain
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: contentmain
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_include_in_library: true
+  field_include_in_profile: true
+  flag_flag_list_template_1: true
+  private: true

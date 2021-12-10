@@ -1,0 +1,228 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.resource_browser
+    - field.field.node.collection.field_description
+    - field.field.node.collection.field_include_in_library
+    - field.field.node.collection.field_include_in_profile
+    - field.field.node.collection.field_oer_reference
+    - field.field.node.collection.field_resources_in_collection
+    - field.field.node.collection.field_subject
+    - field.field.node.collection.field_tags
+    - field.field.node.collection.field_work_in_progress
+    - node.type.collection
+  module:
+    - entity_browser_table
+    - field_group
+    - link
+    - path
+    - private_content
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_collection
+        - group_description
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Tabs
+    group_collection:
+      children:
+        - title
+        - field_resources_in_collection
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: false
+      label: Collection
+    group_details:
+      children:
+        - field_subject
+        - field_tags
+      parent_name: ''
+      weight: 1
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        weight: 0
+        id: ''
+        classes: ''
+        required_fields: false
+      label: Metadata
+    group_description:
+      children:
+        - field_description
+        - field_oer_reference
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: false
+      label: Description
+    group_settings:
+      children:
+        - field_include_in_library
+        - field_include_in_profile
+        - field_work_in_progress
+      parent_name: ''
+      weight: 2
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: false
+        weight: 0
+      label: Settings
+id: node.collection.default
+targetEntityType: node
+bundle: collection
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    weight: 26
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_include_in_library:
+    weight: 10
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_include_in_profile:
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_oer_reference:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_resources_in_collection:
+    weight: 3
+    settings:
+      entity_browser: resource_browser
+      field_widget_display: label
+      field_widget_remove: '1'
+      open: '1'
+      selection_mode: selection_prepend
+      field_widget_edit: 0
+      field_widget_replace: 0
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_browser_table_widget
+    region: content
+  field_subject:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tags:
+    weight: 29
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_work_in_progress:
+    weight: 12
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  private:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: private
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,11 @@
+id: user_h5p_in_profile
+label: 'User Profile: H5P'
+ui_limit: ''
+properties:
+  block: 'views_block:user_profile_blocks_content_-block_1'
+  use_block_title: false
+  add_block_wrappers: false
+type: block
+type_label: 'Block field'
+entities:
+  user: user

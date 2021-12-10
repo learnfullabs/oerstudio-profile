@@ -1,0 +1,29 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - learnful_studio
+id: learnful_studio_breadcrumbs
+theme: learnful_studio
+region: header
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      h5p: h5p
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

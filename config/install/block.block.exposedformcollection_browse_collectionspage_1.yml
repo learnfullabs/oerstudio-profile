@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.collection_browse_collections
+  module:
+    - system
+    - views
+  theme:
+    - learnful_studio
+id: exposedformcollection_browse_collectionspage_1
+theme: learnful_studio
+region: sidebar_left
+weight: -8
+provider: null
+plugin: 'views_exposed_filter_block:collection_browse_collections-page_1'
+settings:
+  id: 'views_exposed_filter_block:collection_browse_collections-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /browse/collections
+    negate: false
+    context_mapping: {  }

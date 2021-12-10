@@ -1,0 +1,11 @@
+id: term_header
+label: 'Term - Header (Full)'
+ui_limit: '*|full'
+properties:
+  content:
+    value: "<h1><a href=\"/browse/subjects\">Subject</a>: [term:name]</h1>\r\n"
+    format: full_html
+type: token
+type_label: 'Token field'
+entities:
+  taxonomy_term: taxonomy_term

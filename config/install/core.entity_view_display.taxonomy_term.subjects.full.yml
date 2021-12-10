@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.subjects.field_term_cover_image
+    - taxonomy.vocabulary.subjects
+  module:
+    - ds
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  ds:
+    layout:
+      id: radix_boxton
+      library: radix_layouts/radix_layouts
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      contentmain:
+        - 'dynamic_token_field:taxonomy_term-term_header'
+        - description
+    fields:
+      'dynamic_token_field:taxonomy_term-term_header':
+        plugin_id: 'dynamic_token_field:taxonomy_term-term_header'
+        weight: 0
+        label: hidden
+        formatter: default
+id: taxonomy_term.subjects.full
+targetEntityType: taxonomy_term
+bundle: subjects
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: contentmain
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_term_cover_image: true

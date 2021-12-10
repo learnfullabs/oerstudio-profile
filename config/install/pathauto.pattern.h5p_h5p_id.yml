@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: h5p_h5p_id
+label: 'H5P / H5P:ID'
+type: 'canonical_entities:node'
+pattern: 'h5p/[node:field_h5p:h5p_content_id]'
+selection_criteria:
+  1a11b8ad-80cf-4216-a72d-d3238a9d6981:
+    id: node_type
+    bundles:
+      h5p: h5p
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1a11b8ad-80cf-4216-a72d-d3238a9d6981
+selection_logic: and
+weight: -5
+relationships: {  }

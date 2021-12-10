@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: moderator
+label: Moderator
+weight: 6
+is_admin: null
+permissions:
+  - 'access site in maintenance mode'
+  - 'create collection content'
+  - 'delete own collection content'
+  - 'edit own collection content'

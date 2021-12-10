@@ -1,0 +1,11 @@
+id: h5p_author_info_inner
+label: 'H5P: Author Info Inner'
+ui_limit: ''
+properties:
+  block: 'views_block:h5p_resource_info_blocks-block_2'
+  use_block_title: false
+  add_block_wrappers: false
+type: block
+type_label: 'Block field'
+entities:
+  node: node

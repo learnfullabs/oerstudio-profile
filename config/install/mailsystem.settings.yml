@@ -1,0 +1,6 @@
+theme: learnful_studio
+defaults:
+  sender: mailgun_mail
+  formatter: mailgun_mail
+modules:
+  mailgun: {  }

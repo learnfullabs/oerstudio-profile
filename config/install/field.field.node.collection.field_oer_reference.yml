@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oer_reference
+    - node.type.collection
+  module:
+    - link
+id: node.collection.field_oer_reference
+field_name: field_oer_reference
+entity_type: node
+bundle: collection
+label: 'OER Reference'
+description: "If this <em>collection</em> is related to an existing OER textbook or resource, provide a link to that resource here.\r\nExample:\r\n   Link Text: [insert the title of the OER]\r\n   URL: [insert the URL to the OER]"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

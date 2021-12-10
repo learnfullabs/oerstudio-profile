@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - learnful_studio
+id: learnful_studio_primary_local_tasks
+theme: learnful_studio
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      member: member
+      educator: educator
+      student: student
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.ebrowser_resources
+  module:
+    - views
+name: resource_browser
+label: 'Resource Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select Resources'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  ba986a1b-4a35-41ea-89a5-0cae055c683e:
+    settings:
+      view: ebrowser_resources
+      view_display: entity_browser_1
+      submit_text: 'Add Selected Resources'
+      auto_select: false
+    uuid: ba986a1b-4a35-41ea-89a5-0cae055c683e
+    weight: -9
+    label: Library
+    id: view
+  ca66056f-bed1-437a-bc86-66322f6b7636:
+    settings:
+      view: ebrowser_resources
+      view_display: entity_browser_2
+      submit_text: 'Add Selected Resources'
+      auto_select: false
+    uuid: ca66056f-bed1-437a-bc86-66322f6b7636
+    weight: -10
+    label: 'My Resources'
+    id: view
+  d1febb81-e72c-424d-999f-a7d3420dce27:
+    settings:
+      view: ebrowser_resources
+      view_display: entity_browser_3
+      submit_text: 'Add Selected Resources'
+      auto_select: false
+    uuid: d1febb81-e72c-424d-999f-a7d3420dce27
+    weight: 3
+    label: 'My Bookmarks'
+    id: view

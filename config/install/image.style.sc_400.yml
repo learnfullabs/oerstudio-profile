@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: sc_400
+label: sc_400
+effects:
+  d0f84492-bb34-4834-9ca3-9ce439086c57:
+    uuid: d0f84492-bb34-4834-9ca3-9ce439086c57
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400
+      anchor: center-center

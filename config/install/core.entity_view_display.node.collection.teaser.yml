@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.collection.field_description
+    - field.field.node.collection.field_include_in_library
+    - field.field.node.collection.field_include_in_profile
+    - field.field.node.collection.field_oer_reference
+    - field.field.node.collection.field_resources_in_collection
+    - field.field.node.collection.field_subject
+    - field.field.node.collection.field_tags
+    - field.field.node.collection.field_work_in_progress
+    - node.type.collection
+  module:
+    - private_content
+    - user
+id: node.collection.teaser
+targetEntityType: node
+bundle: collection
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  private:
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: private
+hidden:
+  field_description: true
+  field_include_in_library: true
+  field_include_in_profile: true
+  field_oer_reference: true
+  field_resources_in_collection: true
+  field_subject: true
+  field_tags: true
+  field_work_in_progress: true

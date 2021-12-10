@@ -1,0 +1,11 @@
+disabled: false
+field_template: true
+ft-default: default
+ft-show-colon: false
+ft-layout-builder: false
+classes:
+  region:
+    - w-75
+    - mx-auto
+  field: {  }
+use_field_names: true
